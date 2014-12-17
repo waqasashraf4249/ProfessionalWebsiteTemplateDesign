@@ -2,6 +2,30 @@
     background-color: gray;
 }
 
+@font-face {
+    font-family: 'MrsEavesItalic';
+    src: url('\fonts\MrsEavesItalic.eot');
+    src: local(':relaxed:'), url('fonts/MrsEavesItalic.woff') format('woff'), url('fonts/MrsEavesItalic.ttf') format('truetype'), url('fonts/MrsEavesItalic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI-SemiBold';
+    src: url('\fonts\SegoeUI-SemiBold.eot');
+    src: local(':relaxed:'), url('fonts/SegoeUI-SemiBold.woff') format('woff'), url('fonts/SegoeUI-SemiBold.ttf') format('truetype'), url('fonts/SegoeUI-SemiBold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniversCE-Light';
+    src: url('\fonts\UniversCE-Light.eot');
+    src: local(':relaxed:'), url('fonts/UniversCE-Light.woff') format('woff'), url('fonts/UniversCE-Light.ttf') format('truetype'), url('fonts/UniversCE-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .left {
     float: left;
 }
@@ -36,45 +60,48 @@
     margin: 0 auto;
 }
 
-#topDiv {
+#primarynavigation {
     width: 1024px;
     margin: 0 auto;
     overflow: auto;
 }
 
-#topDiv1 {
-    width: 330px;
+#headerleo {
+    width: 328px;
     font-size: 80px;
     font-style: italic;
+    font-family: 'MrsEavesItalic';
     color: lightgray;
     padding-top: 45px;
     padding-left: 120px;
 }
 
-#topDiv2 {
+#headermenu {
     font-size: 22px;
     position: relative;
     padding-left: 30px;
 }
 
-    #topDiv2 > ul {
+    #headermenu > ul {
         text-decoration: none;
         list-style-type: none;
+        font-family: 'Segoe UI';
+        font-weight: inherit;
         color: lightgray;
     }
 
-        #topDiv2 > ul li {
+        #headermenu > ul li {
             float: left;
             padding-right: 35px;
             padding-top: 25px;
         }
 
-#bottomDiv {
+#introducing {
     overflow: auto;
     padding-top: 50px;
 }
 
-    #bottomDiv > ul {
+    #introducing > ul {
         overflow: auto;
         list-style-type: none;
         border-bottom: 1px solid;
@@ -82,19 +109,19 @@
         padding-bottom: 50px;
     }
 
-    #bottomDiv #firstli {
+    #introducing #introducingleftarrow {
         padding-top: 100px;
         padding-right: 170px;
         padding-left: 10px;
     }
 
-#firstli > a {
+#introducingleftarrow > a {
     background-image: url('../images/banner-arrow-left.png');
     background-repeat: no-repeat;
     padding: 30px;
 }
 
-#secondli > a {
+#coffee > a {
     width: 350px;
     font-size: 70px;
     padding-top: 330px;
@@ -103,19 +130,23 @@
     margin-right: 70px;
 }
 
-#thirdli h1 {
+#introducingtitles h1 {
     color: white;
     font-size: 60px;
     line-height: 0px;
     padding-top: 35px;
+    font-family: 'Segoe WP';
+    font-weight: inherit;
 }
 
-#thirdli h3 {
+#introducingtitles h3 {
     font-size: 36px;
     color: lightgray;
+    font-family: 'Segoe WP SemiLight';
+    font-weight: inherit;
 }
 
-#thirdli a {
+#introducingtitles a {
     text-decoration: none;
     color: lightgray;
     border: 5px solid #353d39;
@@ -123,20 +154,22 @@
     background-color: #175b3b;
     font-size: 25px;
     margin: 5px;
+    font-family: 'Segoe WP SemiLight';
+    font-weight: inherit;
 }
 
-#forthli {
+#introducingrightarrow {
     padding-top: 100px;
     padding-left: 180px;
 }
 
-    #forthli > a {
+    #introducingrightarrow > a {
         background-image: url('../images/banner-arrow-right.png');
         background-repeat: no-repeat;
         padding: 30px;
     }
 
-#fifthli {
+#mainwebsites {
     overflow: auto;
     padding-left: 50px;
 }
@@ -156,12 +189,13 @@
 
 
         #websites > li ul li {
-            color: lightgray;
+            color: darkgrey;
         }
 
         #websites > li#ecommercewebsites ul li {
-            color: darkgrey;
-            font-weight: bolder;
+            color: gray;
+            font-weight: 600;
+            font-size: 16px;
         }
 
 #responsivewebsites {
@@ -174,6 +208,8 @@
     #responsivewebsites > ul {
         list-style-type: none;
         text-align: center;
+        font-family: 'Segoe WP SemiLight';
+        font-weight: inherit;
     }
 
         #responsivewebsites > ul li:first-child {
@@ -208,6 +244,8 @@
 #ecommercewebsites > ul {
     list-style-type: none;
     text-align: center;
+    font-family: 'Segoe WP';
+    font-weight: inherit;
 }
 
 #dailyblogwebsites {
@@ -220,6 +258,8 @@
     #dailyblogwebsites > ul {
         list-style-type: none;
         text-align: center;
+        font-family: 'Segoe WP SemiLight';
+        font-weight: inherit;
     }
 
     #dailyblogwebsites ul li:first-child {
@@ -248,9 +288,11 @@
     #searchbasedwebsites > ul {
         list-style-type: none;
         text-align: center;
+        font-family: 'Segoe WP SemiLight';
+        font-weight: inherit;
     }
 
-#bottomDiv li#ipad {
+#introducing li#ipad {
     padding-top: 40px;
     padding-left: 190px;
     border-left: 1px solid;
@@ -260,14 +302,14 @@
     padding-right: 153px;
 }
 
-    #bottomDiv li#ipad span {
+    #introducing li#ipad span {
         background-image: url('../images/ipad.png');
         background-repeat: no-repeat;
         width: 670px;
         padding-top: 320px;
     }
 
-#bottomDiv li#ipadText {
+#introducing li#ipadText {
     padding-top: 40px;
     padding-left: 70px;
     border-left: 1px solid;
@@ -279,22 +321,26 @@
     padding-bottom: 60px;
 }
 
-    #bottomDiv li#ipadText h2 {
+    #introducing li#ipadText h2 {
         color: grey;
         font-weight: bolder;
         font-size: 36px;
         width: 650px;
+        font-family: 'Segoe WP SemiLight';
+        font-weight: inherit;
     }
 
-    #bottomDiv li#ipadText p {
+    #introducing li#ipadText p {
         color: darkgray;
         font-size: 15px;
         width: 945px;
+        font-family: 'UniversCE-Light';
+        font-weight: inherit;
     }
 
-#bottomDiv li#screenshot {
+#introducing li#screenshot {
     padding-top: 25px;
-    margin-left: 88px;
+    margin-left: 50px;
     padding-bottom: 70px;
 }
 
@@ -307,9 +353,11 @@
 
 
 #screenshot h3 {
-    color: darkgrey;
-    font-size: 35px;
+    color: gray;
+    font-size: 30px;
     padding-left: 35px;
+    font-family: 'Segoe WP SemiLight';
+    font-weight: inherit;
 }
 
 #screenshot span {
@@ -319,6 +367,8 @@
     background-repeat: no-repeat;
     color: darkgray;
     padding-left: 30px;
+    font-family: 'Segoe WP SemiLight';
+    font-weight: inherit;
 }
 
 #memberlogin {
@@ -411,55 +461,71 @@
         overflow: auto;
         list-style-type: none;
         color: #aaacac;
+        font-family: 'Segoe WP SemiLight';
+        font-weight: inherit;
     }
 
 #footerul {
     list-style-type: none;
     margin-left: 80px;
-    line-height: 26px;
+    line-height: 34px;
+    font-family: 'Segoe WP SemiLight';
+    font-weight: inherit;
 }
 
     #footerul > li > h2 {
-        color: #acacac;
+        color: #ececec;
+        font-family: 'Segoe WP SemiLight';
+        font-weight: inherit;
     }
 
-#footersecondli {
+#footersaboutus {
     position: absolute;
     margin-left: 265px;
     overflow: hidden;
+    font-family: 'Segoe WP SemiLight';
+    font-weight: inherit;
 }
 
-    #footersecondli ul {
+    #footersaboutus ul {
         list-style-type: none;
-        line-height: 26px;
+        line-height: 34px;
+        font-family: 'Segoe WP SemiLight';
+        font-weight: inherit;
     }
 
-        #footersecondli ul li > h2 {
-            color: #acacac;
+        #footersaboutus ul li > h2 {
+            color: #ececec;
+            font-family: 'Segoe WP SemiLight';
+            font-weight: inherit;
         }
 
-#footerthirdli {
+#footertestimonials {
     padding-top: 20px;
     position: absolute;
     margin-left: 450px;
 }
 
-    #footerthirdli ul {
+    #footertestimonials ul {
         list-style-type: none;
-        line-height: 26px;
+        line-height: 34px;
+        font-family: 'Segoe WP SemiLight';
+        font-weight: inherit;
     }
 
-        #footerthirdli ul li:first-child {
+        #footertestimonials ul li:first-child {
             display: inline-table;
             padding-bottom: 16px;
         }
 
-            #footerthirdli ul li:first-child h2 {
+            #footertestimonials ul li:first-child h2 {
                 display: inline;
-                color: #acacac;
+                color: #ececec;
+                font-family: 'Segoe WP SemiLight';
+                font-weight: inherit;
             }
 
-            #footerthirdli ul li:first-child #leftarrow {
+            #footertestimonials ul li:first-child #leftarrow {
                 background-image: url('../images/footerleftarrow.png');
                 background-repeat: no-repeat;
                 padding-left: 12px;
@@ -467,26 +533,27 @@
                 margin-left: 70px;
             }
 
-            #footerthirdli ul li:first-child #rightarrow {
+            #footertestimonials ul li:first-child #rightarrow {
                 background-image: url('../images/footerrightarrow.png');
                 background-repeat: no-repeat;
                 padding-left: 12px;
                 padding-right: 12px;
             }
 
-#footerforthli {
+#footerleo {
     position: absolute;
     margin-left: 850px;
 }
 
-    #footerforthli ul {
+    #footerleo ul {
         list-style-type: none;
     }
 
-        #footerforthli ul li:first-child {
+        #footerleo ul li:first-child {
             font-size: 80px;
             font-style: italic;
             color: #6c6c6d;
             padding-top: 70px;
             padding-left: 100px;
+            font-family: 'MrsEavesItalic';
         }
