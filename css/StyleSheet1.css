@@ -30,11 +30,6 @@
     float: left;
 }
 
-.font {
-    font-weight: inherit;
-    font-family: sans-serif;
-}
-
 .padding {
     padding-bottom: 10px;
 }
@@ -63,7 +58,7 @@
 #primarynavigation {
     width: 1024px;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #headerleo {
@@ -88,6 +83,7 @@
         font-family: 'Segoe UI';
         font-weight: inherit;
         color: lightgray;
+        overflow: hidden;
     }
 
         #headermenu > ul li {
@@ -97,16 +93,16 @@
         }
 
 #introducing {
-    overflow: auto;
+    overflow: hidden;
     padding-top: 50px;
 }
 
     #introducing > ul {
-        overflow: auto;
         list-style-type: none;
         border-bottom: 1px solid;
         border-color: lightgray;
         padding-bottom: 50px;
+        overflow: hidden;
     }
 
     #introducing #introducingleftarrow {
@@ -170,14 +166,14 @@
     }
 
 #mainwebsites {
-    overflow: auto;
+    overflow: hidden;
     padding-left: 50px;
 }
 
 #websites {
     list-style-type: none;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     padding-top: 30px;
 }
 
@@ -210,6 +206,7 @@
         text-align: center;
         font-family: 'Segoe WP SemiLight';
         font-weight: inherit;
+        overflow: hidden;
     }
 
         #responsivewebsites > ul li:first-child {
@@ -246,6 +243,7 @@
     text-align: center;
     font-family: 'Segoe WP';
     font-weight: inherit;
+    overflow: hidden;
 }
 
 #dailyblogwebsites {
@@ -260,6 +258,7 @@
         text-align: center;
         font-family: 'Segoe WP SemiLight';
         font-weight: inherit;
+        overflow: hidden;
     }
 
     #dailyblogwebsites ul li:first-child {
@@ -290,6 +289,7 @@
         text-align: center;
         font-family: 'Segoe WP SemiLight';
         font-weight: inherit;
+        overflow: hidden;
     }
 
 #introducing li#ipad {
@@ -372,7 +372,7 @@
 }
 
 #memberlogin {
-    overflow: auto;
+    overflow: hidden;
     margin-left: 88px;
     background-color: #e67624;
     border-radius: 10px;
@@ -388,7 +388,6 @@
         font-size: 30px;
         line-height: 0px;
         padding-left: 20px;
-        padding-top: 10px;
     }
 
     #memberlogin input {
@@ -409,7 +408,7 @@
     }
 
 #newsletter {
-    overflow: auto;
+    overflow: hidden;
     margin-left: 50px;
     background-color: #01d4f3;
     border-radius: 10px;
@@ -425,7 +424,6 @@
         font-size: 26px;
         line-height: 0px;
         padding-left: 15px;
-        padding-top: 13px;
     }
 
     #newsletter input {
@@ -458,7 +456,7 @@
 }
 
     #footer ul {
-        overflow: auto;
+        overflow: hidden;
         list-style-type: none;
         color: #aaacac;
         font-family: 'Segoe WP SemiLight';
@@ -511,6 +509,7 @@
         line-height: 34px;
         font-family: 'Segoe WP SemiLight';
         font-weight: inherit;
+        overflow: hidden;
     }
 
         #footertestimonials ul li:first-child {
@@ -547,6 +546,7 @@
 
     #footerleo ul {
         list-style-type: none;
+        overflow: hidden;
     }
 
         #footerleo ul li:first-child {
