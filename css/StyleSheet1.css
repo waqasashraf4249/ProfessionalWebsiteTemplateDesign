@@ -545,12 +545,12 @@ li#ipadText {
     color: #6c6c6d;
     /*padding: 70px 0px 0px 100px;*/
     font-family: 'MrsEavesItalic';
-    margin: -190px 75px 0px 0px;
+    margin: -190px 75px 99px 0px;
     float: right;
 }
 
 #footer span {
     float: right;
-    margin: -110px 140px -12px 10px;
+    margin: -99px 140px 81px 10px;
     color: lightgrey;
 }
