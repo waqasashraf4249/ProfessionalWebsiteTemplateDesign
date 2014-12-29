@@ -465,6 +465,7 @@ li#ipadText {
         color: #aaacac;
         font-family: 'Segoe WP SemiLight';
         margin: 0px 0px 0px 90px;
+	width: 825px;
     }
 
         #footer > ul li:first-child {
